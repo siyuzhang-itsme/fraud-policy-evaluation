@@ -30,7 +30,7 @@ python code/build_baseline_comparison.py
 python code/build_v11.py
 ```
 
-The first command generates **fictional CSV accounts and events** from a fixed seed; the input files are not real customer records. See [DATA_DICTIONARY.md](DATA_DICTIONARY.md) and the current v11 [evaluation outputs](results/feedback_loop_metrics.json). The dashboard is already bundled at `docs/index.html`.
+The first command generates **fictional CSV accounts and events** from a fixed seed; the input files are not real customer records. See [DATA_DICTIONARY.md](DATA_DICTIONARY.md) and the [synthetic evaluation outputs](results/feedback_loop_metrics.json). The dashboard is already bundled at `docs/index.html`.
 
 ## Limits
 
