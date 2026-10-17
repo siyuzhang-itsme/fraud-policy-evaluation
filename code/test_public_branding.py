@@ -1,6 +1,7 @@
 """Guard the public dashboard title and reader-facing branding."""
 import unittest
 from pathlib import Path
+from build_v11 import build
 
 ROOT = Path(__file__).resolve().parents[1]
 TITLE = "<title>Fraud Policy Evaluation | Payment Decisions, Disputes &amp; Recovery</title>"
@@ -8,9 +9,12 @@ BANNER = "FRAUD POLICY EVALUATION <em>/</em> PAYMENT DECISIONS, DISPUTES &amp; R
 
 class PublicBrandingTests(unittest.TestCase):
     def test_public_title_and_banner_match_source_and_dashboard(self):
-        for path in ("docs/v11_template.html", "docs/index.html"):
-            with self.subTest(path=path):
-                text = (ROOT / path).read_text(encoding="utf-8")
+        # Other unit tests may temporarily write an earlier dashboard to index.html.
+        # Check the canonical template and final in-memory render instead;
+        # GitHub Actions separately checks regenerated docs/index.html byte-for-byte.
+        for label, text in (("canonical template", (ROOT / "docs/v11_template.html").read_text(encoding="utf-8")),
+                            ("rendered dashboard", build(write=False))):
+            with self.subTest(path=label):
                 self.assertEqual(text.count(TITLE), 1)
                 self.assertEqual(text.count(BANNER), 1)
                 self.assertNotIn("D04 v11 |", text)
