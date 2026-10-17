@@ -1,5 +1,7 @@
 # Fraud Policy Evaluation — Payment Decisions, Disputes & Recovery
 
+[![Zenodo DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23442713.svg)](https://doi.org/10.5281/zenodo.23442713)
+
 **Stop Fraud. Protect Legitimate Payments. Recover Losses.**
 
 A reproducible **fictional** demonstration of two connected consumer-financial risk decisions: (1) payment screening and rule governance, and (2) dispute handling and recovery policy. The example shows how later evidence can improve decisions without using real account, customer, employer, or production-rule data.
@@ -41,4 +43,4 @@ The first command generates **fictional CSV accounts and events** from a fixed s
 
 **License:** [MIT License](LICENSE). Reuse of the software and associated documentation is permitted under its terms; all example data and metrics are fictional.
 
-**Citation:** See [CITATION.cff](CITATION.cff) for the author, title, version and citation metadata for this public D04 software resource.
+**Cite this software:** Zhang, Siyu (2026). *Fraud Policy Evaluation: Payment Decisions, Disputes and Recovery* (v1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.23442713. See [CITATION.cff](CITATION.cff) for machine-readable metadata. This DOI identifies the archived **v1.0.0 release**, not later changes to the main branch.
