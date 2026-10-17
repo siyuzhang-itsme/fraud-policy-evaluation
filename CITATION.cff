@@ -9,6 +9,8 @@ authors:
 repository-code: "https://github.com/siyuzhang-itsme/fraud-policy-evaluation"
 license: MIT
 version: "1.0.0"
+date-released: 2026-10-17
+doi: 10.5281/zenodo.23442713
 keywords:
   - "fraud policy evaluation"
   - "payment screening"
