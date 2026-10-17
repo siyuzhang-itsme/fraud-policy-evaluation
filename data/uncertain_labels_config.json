@@ -1,0 +1,13 @@
+{
+  "n": 90000,
+  "loss_margin": 0.55,
+  "intervention_cost": 0.5,
+  "denial_cost": 10.0,
+  "min_cost_gain": 0.004,
+  "access_margin": 0.002,
+  "alpha": 0.05,
+  "randomized": true,
+  "inference": "bernstein",
+  "max_amount": 200.0,
+  "unreported_cap": 1.0
+}
