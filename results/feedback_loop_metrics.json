@@ -1,0 +1,1134 @@
+{
+  "narrow_sufficient": {
+    "label": "Narrower rule sufficient",
+    "config": {
+      "loss_margin": 0.55,
+      "access_margin": 0.002,
+      "min_cost_gain": 0.004,
+      "intervention_cost": 0.5,
+      "denial_cost": 10.0,
+      "assumed_interchange_rate": 0.01
+    },
+    "checkpoints": {
+      "14": {
+        "day": 14,
+        "arms": {
+          "retain": {
+            "n": 29870,
+            "decline_rate": 0.01975225979243388,
+            "unit_precision": 0.10338983050847457,
+            "unit_recall": 0.2904761904761905,
+            "dollar_precision": 0.10090984284532671,
+            "dollar_recall": 0.2863849765258216,
+            "audit_coverage": 1.0,
+            "policy_declines": 590,
+            "bad_policy_declines": 61,
+            "good_policy_declines": 529,
+            "policy_blocked_requested_dollars": 60450.0,
+            "bad_policy_blocked_requested_dollars": 6100.0,
+            "good_policy_blocked_requested_dollars": 54350.0,
+            "all_fraud_requested_dollars": 21300.0,
+            "good_final_approved_requested_dollars": 2747700.0,
+            "good_final_approved_dollars_per_eligible": 91.98861734181453,
+            "average_blocked_requested_amount": 102.45762711864407,
+            "reviewed_fraud_intent": 210,
+            "fraud_policy_declines": 61,
+            "requested_amount": 3136250.0,
+            "net_loss_per_eligible": 0.0,
+            "net_loss_bps_observed": 0.0,
+            "known_legit_final_approval_rate": 0.8756611985269501,
+            "final_approval_rate": 0.8800803481754268,
+            "financial_open_share": 0.8800803481754269,
+            "unknown_intent_share": 0.0,
+            "pending_target_per_eligible": 0.0
+          },
+          "narrow": {
+            "n": 29850,
+            "decline_rate": 0.00797319932998325,
+            "unit_precision": 0.19747899159663865,
+            "unit_recall": 0.26256983240223464,
+            "dollar_precision": 0.188911704312115,
+            "dollar_recall": 0.25,
+            "audit_coverage": 1.0,
+            "policy_declines": 238,
+            "bad_policy_declines": 47,
+            "good_policy_declines": 191,
+            "policy_blocked_requested_dollars": 24350.0,
+            "bad_policy_blocked_requested_dollars": 4600.0,
+            "good_policy_blocked_requested_dollars": 19750.0,
+            "all_fraud_requested_dollars": 18400.0,
+            "good_final_approved_requested_dollars": 2794700.0,
+            "good_final_approved_dollars_per_eligible": 93.62479061976549,
+            "average_blocked_requested_amount": 102.3109243697479,
+            "reviewed_fraud_intent": 179,
+            "fraud_policy_declines": 47,
+            "requested_amount": 3129900.0,
+            "net_loss_per_eligible": 0.0,
+            "net_loss_bps_observed": 0.0,
+            "known_legit_final_approval_rate": 0.8916582914572865,
+            "final_approval_rate": 0.8957118927973199,
+            "financial_open_share": 0.8957118927973199,
+            "unknown_intent_share": 0.0,
+            "pending_target_per_eligible": 0.0
+          },
+          "retire": {
+            "n": 30280,
+            "decline_rate": 0.0,
+            "unit_precision": null,
+            "unit_recall": 0.0,
+            "dollar_precision": null,
+            "dollar_recall": 0.0,
+            "audit_coverage": 1.0,
+            "policy_declines": 0,
+            "bad_policy_declines": 0,
+            "good_policy_declines": 0,
+            "policy_blocked_requested_dollars": 0.0,
+            "bad_policy_blocked_requested_dollars": 0.0,
+            "good_policy_blocked_requested_dollars": 0.0,
+            "all_fraud_requested_dollars": 22450.0,
+            "good_final_approved_requested_dollars": 2839250.0,
+            "good_final_approved_dollars_per_eligible": 93.76651254953765,
+            "average_blocked_requested_amount": null,
+            "reviewed_fraud_intent": 226,
+            "fraud_policy_declines": 0,
+            "requested_amount": 3182100.0,
+            "net_loss_per_eligible": 0.0,
+            "net_loss_bps_observed": 0.0,
+            "known_legit_final_approval_rate": 0.8931638044914135,
+            "final_approval_rate": 0.9000660501981506,
+            "financial_open_share": 0.9000660501981506,
+            "unknown_intent_share": 0.0,
+            "pending_target_per_eligible": 0.0
+          }
+        },
+        "benefit": {
+          "narrow": {
+            "incremental_recognized_net_loss_per_eligible": 0.0,
+            "incremental_final_approval_rate": 0.01563154462189309,
+            "incremental_supported_legit_approval_rate": 0.015997092930336354,
+            "loss_interval": [
+              -93.8789545891778,
+              95.45749324452069
+            ],
+            "access_interval": [
+              0.0007181113569377784,
+              0.03127607450373493
+            ],
+            "consumer_cost_interval": [
+              -0.30590292428569754,
+              -0.004674042682835777
+            ],
+            "evidence_status": "unresolved"
+          },
+          "retire": {
+            "incremental_recognized_net_loss_per_eligible": 0.0,
+            "incremental_final_approval_rate": 0.01998570202272376,
+            "incremental_supported_legit_approval_rate": 0.017502605964463402,
+            "loss_interval": [
+              -93.8789545891778,
+              95.84939282102616
+            ],
+            "access_interval": [
+              0.0023223766172052462,
+              0.03268283531172156
+            ],
+            "consumer_cost_interval": [
+              -0.337187917771116,
+              -0.03923841934184269
+            ],
+            "evidence_status": "unresolved"
+          }
+        },
+        "decision": "defer",
+        "why": "Evidence does not resolve a safe useful change",
+        "feedback": {
+          "records": 90000,
+          "totals": {
+            "legitimate_review": {
+              "records": 89385,
+              "accounts": 89385,
+              "amount": 0.0
+            },
+            "fraud_review": {
+              "records": 615,
+              "accounts": 615,
+              "amount": 0.0
+            },
+            "commercial_claim": {
+              "records": 1229,
+              "accounts": 1229,
+              "amount": 128250.0
+            },
+            "submitted_claim": {
+              "records": 462,
+              "accounts": 462,
+              "amount": 46950.0
+            },
+            "pending_target_classification": {
+              "records": 0,
+              "accounts": 0,
+              "amount": 0.0
+            },
+            "recognized_fraud_loss": {
+              "records": 0,
+              "accounts": 0,
+              "amount": 0.0
+            },
+            "recovery": {
+              "records": 0,
+              "accounts": 0,
+              "amount": 0.0
+            },
+            "financial_horizon_closed": {
+              "records": 9721,
+              "accounts": 9721,
+              "amount": 0.0
+            },
+            "unfiltered_claim_proxy": {
+              "accounts": 1691
+            }
+          },
+          "by_arm": {
+            "retain": {
+              "submitted_claim": {
+                "count": 132,
+                "amount": 13700.0
+              },
+              "commercial_claim": {
+                "count": 393,
+                "amount": 41000.0
+              },
+              "pending_target_classification": {
+                "count": 0,
+                "amount": 0.0
+              },
+              "recognized_fraud_loss": {
+                "count": 0,
+                "amount": 0.0
+              },
+              "recovery": {
+                "count": 0,
+                "amount": 0.0
+              }
+            },
+            "narrow": {
+              "submitted_claim": {
+                "count": 121,
+                "amount": 12550.0
+              },
+              "commercial_claim": {
+                "count": 425,
+                "amount": 44200.0
+              },
+              "pending_target_classification": {
+                "count": 0,
+                "amount": 0.0
+              },
+              "recognized_fraud_loss": {
+                "count": 0,
+                "amount": 0.0
+              },
+              "recovery": {
+                "count": 0,
+                "amount": 0.0
+              }
+            },
+            "retire": {
+              "submitted_claim": {
+                "count": 209,
+                "amount": 20700.0
+              },
+              "commercial_claim": {
+                "count": 411,
+                "amount": 43050.0
+              },
+              "pending_target_classification": {
+                "count": 0,
+                "amount": 0.0
+              },
+              "recognized_fraud_loss": {
+                "count": 0,
+                "amount": 0.0
+              },
+              "recovery": {
+                "count": 0,
+                "amount": 0.0
+              }
+            }
+          }
+        },
+        "dollar_impact": {
+          "interchange_rate": 0.01,
+          "retain_reference_eligible_attempts": 29870,
+          "tested_alternatives": {
+            "narrow": {
+              "reference_eligible_attempts": 29870,
+              "incremental_recognized_net_fraud_loss": 0.0,
+              "incremental_legitimate_final_approved_requested_dollars": 48872.5,
+              "illustrative_interchange_change": 488.72,
+              "illustrative_net_financial_delta": 488.72,
+              "can_treat_as_mature": false
+            },
+            "retire": {
+              "reference_eligible_attempts": 29870,
+              "incremental_recognized_net_fraud_loss": 0.0,
+              "incremental_legitimate_final_approved_requested_dollars": 53105.73,
+              "illustrative_interchange_change": 531.06,
+              "illustrative_net_financial_delta": 531.06,
+              "can_treat_as_mature": false
+            }
+          },
+          "blocked_interchange_upper_bound": 543.5
+        }
+      },
+      "90": {
+        "day": 90,
+        "arms": {
+          "retain": {
+            "n": 29870,
+            "decline_rate": 0.01975225979243388,
+            "unit_precision": 0.10338983050847457,
+            "unit_recall": 0.2904761904761905,
+            "dollar_precision": 0.10090984284532671,
+            "dollar_recall": 0.2863849765258216,
+            "audit_coverage": 1.0,
+            "policy_declines": 590,
+            "bad_policy_declines": 61,
+            "good_policy_declines": 529,
+            "policy_blocked_requested_dollars": 60450.0,
+            "bad_policy_blocked_requested_dollars": 6100.0,
+            "good_policy_blocked_requested_dollars": 54350.0,
+            "all_fraud_requested_dollars": 21300.0,
+            "good_final_approved_requested_dollars": 2747700.0,
+            "good_final_approved_dollars_per_eligible": 91.98861734181453,
+            "average_blocked_requested_amount": 102.45762711864407,
+            "reviewed_fraud_intent": 210,
+            "fraud_policy_declines": 61,
+            "requested_amount": 3136250.0,
+            "net_loss_per_eligible": 0.3210579176431202,
+            "net_loss_bps_observed": 30.57791948983659,
+            "known_legit_final_approval_rate": 0.8756611985269501,
+            "final_approval_rate": 0.8800803481754268,
+            "financial_open_share": 0.0,
+            "unknown_intent_share": 0.0,
+            "pending_target_per_eligible": 0.0
+          },
+          "narrow": {
+            "n": 29850,
+            "decline_rate": 0.00797319932998325,
+            "unit_precision": 0.19747899159663865,
+            "unit_recall": 0.26256983240223464,
+            "dollar_precision": 0.188911704312115,
+            "dollar_recall": 0.25,
+            "audit_coverage": 1.0,
+            "policy_declines": 238,
+            "bad_policy_declines": 47,
+            "good_policy_declines": 191,
+            "policy_blocked_requested_dollars": 24350.0,
+            "bad_policy_blocked_requested_dollars": 4600.0,
+            "good_policy_blocked_requested_dollars": 19750.0,
+            "all_fraud_requested_dollars": 18400.0,
+            "good_final_approved_requested_dollars": 2794700.0,
+            "good_final_approved_dollars_per_eligible": 93.62479061976549,
+            "average_blocked_requested_amount": 102.3109243697479,
+            "reviewed_fraud_intent": 179,
+            "fraud_policy_declines": 47,
+            "requested_amount": 3129900.0,
+            "net_loss_per_eligible": 0.29430485762144054,
+            "net_loss_bps_observed": 28.067989392632356,
+            "known_legit_final_approval_rate": 0.8916582914572865,
+            "final_approval_rate": 0.8957118927973199,
+            "financial_open_share": 0.0,
+            "unknown_intent_share": 0.0,
+            "pending_target_per_eligible": 0.0
+          },
+          "retire": {
+            "n": 30280,
+            "decline_rate": 0.0,
+            "unit_precision": null,
+            "unit_recall": 0.0,
+            "dollar_precision": null,
+            "dollar_recall": 0.0,
+            "audit_coverage": 1.0,
+            "policy_declines": 0,
+            "bad_policy_declines": 0,
+            "good_policy_declines": 0,
+            "policy_blocked_requested_dollars": 0.0,
+            "bad_policy_blocked_requested_dollars": 0.0,
+            "good_policy_blocked_requested_dollars": 0.0,
+            "all_fraud_requested_dollars": 22450.0,
+            "good_final_approved_requested_dollars": 2839250.0,
+            "good_final_approved_dollars_per_eligible": 93.76651254953765,
+            "average_blocked_requested_amount": null,
+            "reviewed_fraud_intent": 226,
+            "fraud_policy_declines": 0,
+            "requested_amount": 3182100.0,
+            "net_loss_per_eligible": 0.4785336856010568,
+            "net_loss_bps_observed": 45.535966814367875,
+            "known_legit_final_approval_rate": 0.8931638044914135,
+            "final_approval_rate": 0.9000660501981506,
+            "financial_open_share": 0.0,
+            "unknown_intent_share": 0.0,
+            "pending_target_per_eligible": 0.0
+          }
+        },
+        "benefit": {
+          "narrow": {
+            "incremental_recognized_net_loss_per_eligible": -0.026753060021679653,
+            "incremental_final_approval_rate": 0.01563154462189309,
+            "incremental_supported_legit_approval_rate": 0.015997092930336354,
+            "loss_interval": [
+              -0.48496447880669336,
+              0.43145835876333405
+            ],
+            "access_interval": [
+              0.0007181113569377784,
+              0.03127607450373493
+            ],
+            "consumer_cost_interval": [
+              -0.30590292428569754,
+              -0.004674042682835777
+            ],
+            "evidence_status": "supported"
+          },
+          "retire": {
+            "incremental_recognized_net_loss_per_eligible": 0.1574757679579366,
+            "incremental_final_approval_rate": 0.01998570202272376,
+            "incremental_supported_legit_approval_rate": 0.017502605964463402,
+            "loss_interval": [
+              -0.32686503342467554,
+              0.6418165693405488
+            ],
+            "access_interval": [
+              0.0023223766172052462,
+              0.03268283531172156
+            ],
+            "consumer_cost_interval": [
+              -0.337187917771116,
+              -0.03923841934184269
+            ],
+            "evidence_status": "unresolved"
+          }
+        },
+        "decision": "narrow",
+        "why": "At least this change is supported; inspect other option separately",
+        "feedback": {
+          "records": 90000,
+          "totals": {
+            "legitimate_review": {
+              "records": 89385,
+              "accounts": 89385,
+              "amount": 0.0
+            },
+            "fraud_review": {
+              "records": 615,
+              "accounts": 615,
+              "amount": 0.0
+            },
+            "commercial_claim": {
+              "records": 1229,
+              "accounts": 1229,
+              "amount": 128250.0
+            },
+            "submitted_claim": {
+              "records": 462,
+              "accounts": 462,
+              "amount": 46950.0
+            },
+            "pending_target_classification": {
+              "records": 0,
+              "accounts": 0,
+              "amount": 0.0
+            },
+            "recognized_fraud_loss": {
+              "records": 462,
+              "accounts": 462,
+              "amount": 46950.0
+            },
+            "recovery": {
+              "records": 462,
+              "accounts": 462,
+              "amount": 14085.0
+            },
+            "financial_horizon_closed": {
+              "records": 90000,
+              "accounts": 90000,
+              "amount": 0.0
+            },
+            "unfiltered_claim_proxy": {
+              "accounts": 1691
+            }
+          },
+          "by_arm": {
+            "retain": {
+              "submitted_claim": {
+                "count": 132,
+                "amount": 13700.0
+              },
+              "commercial_claim": {
+                "count": 393,
+                "amount": 41000.0
+              },
+              "pending_target_classification": {
+                "count": 0,
+                "amount": 0.0
+              },
+              "recognized_fraud_loss": {
+                "count": 132,
+                "amount": 13700.0
+              },
+              "recovery": {
+                "count": 132,
+                "amount": 4110.0
+              }
+            },
+            "narrow": {
+              "submitted_claim": {
+                "count": 121,
+                "amount": 12550.0
+              },
+              "commercial_claim": {
+                "count": 425,
+                "amount": 44200.0
+              },
+              "pending_target_classification": {
+                "count": 0,
+                "amount": 0.0
+              },
+              "recognized_fraud_loss": {
+                "count": 121,
+                "amount": 12550.0
+              },
+              "recovery": {
+                "count": 121,
+                "amount": 3765.0
+              }
+            },
+            "retire": {
+              "submitted_claim": {
+                "count": 209,
+                "amount": 20700.0
+              },
+              "commercial_claim": {
+                "count": 411,
+                "amount": 43050.0
+              },
+              "pending_target_classification": {
+                "count": 0,
+                "amount": 0.0
+              },
+              "recognized_fraud_loss": {
+                "count": 209,
+                "amount": 20700.0
+              },
+              "recovery": {
+                "count": 209,
+                "amount": 6210.0
+              }
+            }
+          }
+        },
+        "dollar_impact": {
+          "interchange_rate": 0.01,
+          "retain_reference_eligible_attempts": 29870,
+          "tested_alternatives": {
+            "narrow": {
+              "reference_eligible_attempts": 29870,
+              "incremental_recognized_net_fraud_loss": -799.11,
+              "incremental_legitimate_final_approved_requested_dollars": 48872.5,
+              "illustrative_interchange_change": 488.72,
+              "illustrative_net_financial_delta": 1287.83,
+              "can_treat_as_mature": true
+            },
+            "retire": {
+              "reference_eligible_attempts": 29870,
+              "incremental_recognized_net_fraud_loss": 4703.8,
+              "incremental_legitimate_final_approved_requested_dollars": 53105.73,
+              "illustrative_interchange_change": 531.06,
+              "illustrative_net_financial_delta": -4172.74,
+              "can_treat_as_mature": true
+            }
+          },
+          "blocked_interchange_upper_bound": 543.5
+        }
+      }
+    },
+    "feedback_cycle": {
+      "from_day": 14,
+      "to_day": 90,
+      "new_recognized_events": 462,
+      "new_recognized_dollars": 46950.0,
+      "new_recovery_events": 462,
+      "new_recovery_dollars": 14085.0,
+      "still_pending_target_labels": 0,
+      "first_decision": "defer",
+      "updated_decision": "narrow"
+    }
+  },
+  "uncertain_labels": {
+    "label": "Unresolved fraud outcomes",
+    "config": {
+      "loss_margin": 0.55,
+      "access_margin": 0.002,
+      "min_cost_gain": 0.004,
+      "intervention_cost": 0.5,
+      "denial_cost": 10.0,
+      "assumed_interchange_rate": 0.01
+    },
+    "checkpoints": {
+      "14": {
+        "day": 14,
+        "arms": {
+          "retain": {
+            "n": 29870,
+            "decline_rate": 0.01975225979243388,
+            "unit_precision": 0.10338983050847457,
+            "unit_recall": 0.2904761904761905,
+            "dollar_precision": 0.10090984284532671,
+            "dollar_recall": 0.2863849765258216,
+            "audit_coverage": 1.0,
+            "policy_declines": 590,
+            "bad_policy_declines": 61,
+            "good_policy_declines": 529,
+            "policy_blocked_requested_dollars": 60450.0,
+            "bad_policy_blocked_requested_dollars": 6100.0,
+            "good_policy_blocked_requested_dollars": 54350.0,
+            "all_fraud_requested_dollars": 21300.0,
+            "good_final_approved_requested_dollars": 2747700.0,
+            "good_final_approved_dollars_per_eligible": 91.98861734181453,
+            "average_blocked_requested_amount": 102.45762711864407,
+            "reviewed_fraud_intent": 210,
+            "fraud_policy_declines": 61,
+            "requested_amount": 3136250.0,
+            "net_loss_per_eligible": 0.0,
+            "net_loss_bps_observed": 0.0,
+            "known_legit_final_approval_rate": 0.8756611985269501,
+            "final_approval_rate": 0.8800803481754268,
+            "financial_open_share": 0.8800803481754269,
+            "unknown_intent_share": 0.0,
+            "pending_target_per_eligible": 0.34147974556411115
+          },
+          "narrow": {
+            "n": 29850,
+            "decline_rate": 0.00797319932998325,
+            "unit_precision": 0.19747899159663865,
+            "unit_recall": 0.26256983240223464,
+            "dollar_precision": 0.188911704312115,
+            "dollar_recall": 0.25,
+            "audit_coverage": 1.0,
+            "policy_declines": 238,
+            "bad_policy_declines": 47,
+            "good_policy_declines": 191,
+            "policy_blocked_requested_dollars": 24350.0,
+            "bad_policy_blocked_requested_dollars": 4600.0,
+            "good_policy_blocked_requested_dollars": 19750.0,
+            "all_fraud_requested_dollars": 18400.0,
+            "good_final_approved_requested_dollars": 2794700.0,
+            "good_final_approved_dollars_per_eligible": 93.62479061976549,
+            "average_blocked_requested_amount": 102.3109243697479,
+            "reviewed_fraud_intent": 179,
+            "fraud_policy_declines": 47,
+            "requested_amount": 3129900.0,
+            "net_loss_per_eligible": 0.0,
+            "net_loss_bps_observed": 0.0,
+            "known_legit_final_approval_rate": 0.8916582914572865,
+            "final_approval_rate": 0.8957118927973199,
+            "financial_open_share": 0.8957118927973199,
+            "unknown_intent_share": 0.0,
+            "pending_target_per_eligible": 0.2981574539363484
+          },
+          "retire": {
+            "n": 30280,
+            "decline_rate": 0.0,
+            "unit_precision": null,
+            "unit_recall": 0.0,
+            "dollar_precision": null,
+            "dollar_recall": 0.0,
+            "audit_coverage": 1.0,
+            "policy_declines": 0,
+            "bad_policy_declines": 0,
+            "good_policy_declines": 0,
+            "policy_blocked_requested_dollars": 0.0,
+            "bad_policy_blocked_requested_dollars": 0.0,
+            "good_policy_blocked_requested_dollars": 0.0,
+            "all_fraud_requested_dollars": 22450.0,
+            "good_final_approved_requested_dollars": 2839250.0,
+            "good_final_approved_dollars_per_eligible": 93.76651254953765,
+            "average_blocked_requested_amount": null,
+            "reviewed_fraud_intent": 226,
+            "fraud_policy_declines": 0,
+            "requested_amount": 3182100.0,
+            "net_loss_per_eligible": 0.0,
+            "net_loss_bps_observed": 0.0,
+            "known_legit_final_approval_rate": 0.8931638044914135,
+            "final_approval_rate": 0.9000660501981506,
+            "financial_open_share": 0.9000660501981506,
+            "unknown_intent_share": 0.0,
+            "pending_target_per_eligible": 0.5696829590488771
+          }
+        },
+        "benefit": {
+          "narrow": {
+            "incremental_recognized_net_loss_per_eligible": 0.0,
+            "incremental_final_approval_rate": 0.01563154462189309,
+            "incremental_supported_legit_approval_rate": 0.015997092930336354,
+            "loss_interval": [
+              -93.8789545891778,
+              95.45749324452069
+            ],
+            "access_interval": [
+              0.0007181113569377784,
+              0.03127607450373493
+            ],
+            "consumer_cost_interval": [
+              -0.30590292428569754,
+              -0.004674042682835777
+            ],
+            "evidence_status": "unresolved"
+          },
+          "retire": {
+            "incremental_recognized_net_loss_per_eligible": 0.0,
+            "incremental_final_approval_rate": 0.01998570202272376,
+            "incremental_supported_legit_approval_rate": 0.017502605964463402,
+            "loss_interval": [
+              -93.8789545891778,
+              95.84939282102616
+            ],
+            "access_interval": [
+              0.0023223766172052462,
+              0.03268283531172156
+            ],
+            "consumer_cost_interval": [
+              -0.337187917771116,
+              -0.03923841934184269
+            ],
+            "evidence_status": "unresolved"
+          }
+        },
+        "decision": "defer",
+        "why": "Evidence does not resolve a safe useful change",
+        "feedback": {
+          "records": 90000,
+          "totals": {
+            "legitimate_review": {
+              "records": 89385,
+              "accounts": 89385,
+              "amount": 0.0
+            },
+            "fraud_review": {
+              "records": 615,
+              "accounts": 615,
+              "amount": 0.0
+            },
+            "commercial_claim": {
+              "records": 1229,
+              "accounts": 1229,
+              "amount": 128250.0
+            },
+            "submitted_claim": {
+              "records": 462,
+              "accounts": 462,
+              "amount": 46950.0
+            },
+            "pending_target_classification": {
+              "records": 356,
+              "accounts": 356,
+              "amount": 36350.0
+            },
+            "recognized_fraud_loss": {
+              "records": 0,
+              "accounts": 0,
+              "amount": 0.0
+            },
+            "recovery": {
+              "records": 0,
+              "accounts": 0,
+              "amount": 0.0
+            },
+            "financial_horizon_closed": {
+              "records": 9721,
+              "accounts": 9721,
+              "amount": 0.0
+            },
+            "unfiltered_claim_proxy": {
+              "accounts": 1691
+            }
+          },
+          "by_arm": {
+            "retain": {
+              "submitted_claim": {
+                "count": 132,
+                "amount": 13700.0
+              },
+              "commercial_claim": {
+                "count": 393,
+                "amount": 41000.0
+              },
+              "pending_target_classification": {
+                "count": 98,
+                "amount": 10200.0
+              },
+              "recognized_fraud_loss": {
+                "count": 0,
+                "amount": 0.0
+              },
+              "recovery": {
+                "count": 0,
+                "amount": 0.0
+              }
+            },
+            "narrow": {
+              "submitted_claim": {
+                "count": 121,
+                "amount": 12550.0
+              },
+              "commercial_claim": {
+                "count": 425,
+                "amount": 44200.0
+              },
+              "pending_target_classification": {
+                "count": 85,
+                "amount": 8900.0
+              },
+              "recognized_fraud_loss": {
+                "count": 0,
+                "amount": 0.0
+              },
+              "recovery": {
+                "count": 0,
+                "amount": 0.0
+              }
+            },
+            "retire": {
+              "submitted_claim": {
+                "count": 209,
+                "amount": 20700.0
+              },
+              "commercial_claim": {
+                "count": 411,
+                "amount": 43050.0
+              },
+              "pending_target_classification": {
+                "count": 173,
+                "amount": 17250.0
+              },
+              "recognized_fraud_loss": {
+                "count": 0,
+                "amount": 0.0
+              },
+              "recovery": {
+                "count": 0,
+                "amount": 0.0
+              }
+            }
+          }
+        },
+        "dollar_impact": {
+          "interchange_rate": 0.01,
+          "retain_reference_eligible_attempts": 29870,
+          "tested_alternatives": {
+            "narrow": {
+              "reference_eligible_attempts": 29870,
+              "incremental_recognized_net_fraud_loss": 0.0,
+              "incremental_legitimate_final_approved_requested_dollars": 48872.5,
+              "illustrative_interchange_change": 488.72,
+              "illustrative_net_financial_delta": 488.72,
+              "can_treat_as_mature": false
+            },
+            "retire": {
+              "reference_eligible_attempts": 29870,
+              "incremental_recognized_net_fraud_loss": 0.0,
+              "incremental_legitimate_final_approved_requested_dollars": 53105.73,
+              "illustrative_interchange_change": 531.06,
+              "illustrative_net_financial_delta": 531.06,
+              "can_treat_as_mature": false
+            }
+          },
+          "blocked_interchange_upper_bound": 543.5
+        }
+      },
+      "90": {
+        "day": 90,
+        "arms": {
+          "retain": {
+            "n": 29870,
+            "decline_rate": 0.01975225979243388,
+            "unit_precision": 0.10338983050847457,
+            "unit_recall": 0.2904761904761905,
+            "dollar_precision": 0.10090984284532671,
+            "dollar_recall": 0.2863849765258216,
+            "audit_coverage": 1.0,
+            "policy_declines": 590,
+            "bad_policy_declines": 61,
+            "good_policy_declines": 529,
+            "policy_blocked_requested_dollars": 60450.0,
+            "bad_policy_blocked_requested_dollars": 6100.0,
+            "good_policy_blocked_requested_dollars": 54350.0,
+            "all_fraud_requested_dollars": 21300.0,
+            "good_final_approved_requested_dollars": 2747700.0,
+            "good_final_approved_dollars_per_eligible": 91.98861734181453,
+            "average_blocked_requested_amount": 102.45762711864407,
+            "reviewed_fraud_intent": 210,
+            "fraud_policy_declines": 61,
+            "requested_amount": 3136250.0,
+            "net_loss_per_eligible": 0.08202209574824239,
+            "net_loss_bps_observed": 7.811877241929055,
+            "known_legit_final_approval_rate": 0.8756611985269501,
+            "final_approval_rate": 0.8800803481754268,
+            "financial_open_share": 0.0032808838299297483,
+            "unknown_intent_share": 0.0,
+            "pending_target_per_eligible": 0.34147974556411115
+          },
+          "narrow": {
+            "n": 29850,
+            "decline_rate": 0.00797319932998325,
+            "unit_precision": 0.19747899159663865,
+            "unit_recall": 0.26256983240223464,
+            "dollar_precision": 0.188911704312115,
+            "dollar_recall": 0.25,
+            "audit_coverage": 1.0,
+            "policy_declines": 238,
+            "bad_policy_declines": 47,
+            "good_policy_declines": 191,
+            "policy_blocked_requested_dollars": 24350.0,
+            "bad_policy_blocked_requested_dollars": 4600.0,
+            "good_policy_blocked_requested_dollars": 19750.0,
+            "all_fraud_requested_dollars": 18400.0,
+            "good_final_approved_requested_dollars": 2794700.0,
+            "good_final_approved_dollars_per_eligible": 93.62479061976549,
+            "average_blocked_requested_amount": 102.3109243697479,
+            "reviewed_fraud_intent": 179,
+            "fraud_policy_declines": 47,
+            "requested_amount": 3129900.0,
+            "net_loss_per_eligible": 0.08559463986599665,
+            "net_loss_bps_observed": 8.163200102239689,
+            "known_legit_final_approval_rate": 0.8916582914572865,
+            "final_approval_rate": 0.8957118927973199,
+            "financial_open_share": 0.002847571189279696,
+            "unknown_intent_share": 0.0,
+            "pending_target_per_eligible": 0.2981574539363484
+          },
+          "retire": {
+            "n": 30280,
+            "decline_rate": 0.0,
+            "unit_precision": null,
+            "unit_recall": 0.0,
+            "dollar_precision": null,
+            "dollar_recall": 0.0,
+            "audit_coverage": 1.0,
+            "policy_declines": 0,
+            "bad_policy_declines": 0,
+            "good_policy_declines": 0,
+            "policy_blocked_requested_dollars": 0.0,
+            "bad_policy_blocked_requested_dollars": 0.0,
+            "good_policy_blocked_requested_dollars": 0.0,
+            "all_fraud_requested_dollars": 22450.0,
+            "good_final_approved_requested_dollars": 2839250.0,
+            "good_final_approved_dollars_per_eligible": 93.76651254953765,
+            "average_blocked_requested_amount": null,
+            "reviewed_fraud_intent": 226,
+            "fraud_policy_declines": 0,
+            "requested_amount": 3182100.0,
+            "net_loss_per_eligible": 0.0797556142668428,
+            "net_loss_bps_observed": 7.589327802394646,
+            "known_legit_final_approval_rate": 0.8931638044914135,
+            "final_approval_rate": 0.9000660501981506,
+            "financial_open_share": 0.0057133421400263895,
+            "unknown_intent_share": 0.0,
+            "pending_target_per_eligible": 0.5696829590488771
+          }
+        },
+        "benefit": {
+          "narrow": {
+            "incremental_recognized_net_loss_per_eligible": 0.0035725441177542616,
+            "incremental_final_approval_rate": 0.01563154462189309,
+            "incremental_supported_legit_approval_rate": 0.015997092930336354,
+            "loss_interval": [
+              -0.6935029214467825,
+              0.6465671438723286
+            ],
+            "access_interval": [
+              0.0007181113569377784,
+              0.03127607450373493
+            ],
+            "consumer_cost_interval": [
+              -0.30590292428569754,
+              -0.004674042682835777
+            ],
+            "evidence_status": "unresolved"
+          },
+          "retire": {
+            "incremental_recognized_net_loss_per_eligible": -0.0022664814813995876,
+            "incremental_final_approval_rate": 0.01998570202272376,
+            "incremental_supported_legit_approval_rate": 0.017502605964463402,
+            "loss_interval": [
+              -0.6935029214467825,
+              0.9541591483083413
+            ],
+            "access_interval": [
+              0.0023223766172052462,
+              0.03268283531172156
+            ],
+            "consumer_cost_interval": [
+              -0.337187917771116,
+              -0.03923841934184269
+            ],
+            "evidence_status": "unresolved"
+          }
+        },
+        "decision": "defer",
+        "why": "Evidence does not resolve a safe useful change",
+        "feedback": {
+          "records": 90000,
+          "totals": {
+            "legitimate_review": {
+              "records": 89385,
+              "accounts": 89385,
+              "amount": 0.0
+            },
+            "fraud_review": {
+              "records": 615,
+              "accounts": 615,
+              "amount": 0.0
+            },
+            "commercial_claim": {
+              "records": 1229,
+              "accounts": 1229,
+              "amount": 128250.0
+            },
+            "submitted_claim": {
+              "records": 462,
+              "accounts": 462,
+              "amount": 46950.0
+            },
+            "pending_target_classification": {
+              "records": 356,
+              "accounts": 356,
+              "amount": 36350.0
+            },
+            "recognized_fraud_loss": {
+              "records": 106,
+              "accounts": 106,
+              "amount": 10600.0
+            },
+            "recovery": {
+              "records": 106,
+              "accounts": 106,
+              "amount": 3180.0
+            },
+            "financial_horizon_closed": {
+              "records": 89644,
+              "accounts": 89644,
+              "amount": 0.0
+            },
+            "unfiltered_claim_proxy": {
+              "accounts": 1691
+            }
+          },
+          "by_arm": {
+            "retain": {
+              "submitted_claim": {
+                "count": 132,
+                "amount": 13700.0
+              },
+              "commercial_claim": {
+                "count": 393,
+                "amount": 41000.0
+              },
+              "pending_target_classification": {
+                "count": 98,
+                "amount": 10200.0
+              },
+              "recognized_fraud_loss": {
+                "count": 34,
+                "amount": 3500.0
+              },
+              "recovery": {
+                "count": 34,
+                "amount": 1050.0
+              }
+            },
+            "narrow": {
+              "submitted_claim": {
+                "count": 121,
+                "amount": 12550.0
+              },
+              "commercial_claim": {
+                "count": 425,
+                "amount": 44200.0
+              },
+              "pending_target_classification": {
+                "count": 85,
+                "amount": 8900.0
+              },
+              "recognized_fraud_loss": {
+                "count": 36,
+                "amount": 3650.0
+              },
+              "recovery": {
+                "count": 36,
+                "amount": 1095.0
+              }
+            },
+            "retire": {
+              "submitted_claim": {
+                "count": 209,
+                "amount": 20700.0
+              },
+              "commercial_claim": {
+                "count": 411,
+                "amount": 43050.0
+              },
+              "pending_target_classification": {
+                "count": 173,
+                "amount": 17250.0
+              },
+              "recognized_fraud_loss": {
+                "count": 36,
+                "amount": 3450.0
+              },
+              "recovery": {
+                "count": 36,
+                "amount": 1035.0
+              }
+            }
+          }
+        },
+        "dollar_impact": {
+          "interchange_rate": 0.01,
+          "retain_reference_eligible_attempts": 29870,
+          "tested_alternatives": {
+            "narrow": {
+              "reference_eligible_attempts": 29870,
+              "incremental_recognized_net_fraud_loss": 106.71,
+              "incremental_legitimate_final_approved_requested_dollars": 48872.5,
+              "illustrative_interchange_change": 488.72,
+              "illustrative_net_financial_delta": 382.01,
+              "can_treat_as_mature": false
+            },
+            "retire": {
+              "reference_eligible_attempts": 29870,
+              "incremental_recognized_net_fraud_loss": -67.7,
+              "incremental_legitimate_final_approved_requested_dollars": 53105.73,
+              "illustrative_interchange_change": 531.06,
+              "illustrative_net_financial_delta": 598.76,
+              "can_treat_as_mature": false
+            }
+          },
+          "blocked_interchange_upper_bound": 543.5
+        }
+      }
+    },
+    "feedback_cycle": {
+      "from_day": 14,
+      "to_day": 90,
+      "new_recognized_events": 106,
+      "new_recognized_dollars": 10600.0,
+      "new_recovery_events": 106,
+      "new_recovery_dollars": 3180.0,
+      "still_pending_target_labels": 356,
+      "first_decision": "defer",
+      "updated_decision": "defer"
+    }
+  }
+}
