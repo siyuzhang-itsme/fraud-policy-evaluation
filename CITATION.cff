@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software or its synthetic demonstration, please cite this release."
+type: software
+title: "Fraud Policy Evaluation: Payment Decisions, Disputes and Recovery"
+abstract: "A reproducible, fully fictional demonstration of payment fraud screening, policy governance, dispute decisions, and recovery evaluation using synthetic inputs and offline calculations."
+authors:
+  - family-names: "Zhang"
+    given-names: "Siyu"
+repository-code: "https://github.com/siyuzhang-itsme/fraud-policy-evaluation"
+license: MIT
+version: "1.0.0"
+keywords:
+  - "fraud policy evaluation"
+  - "payment screening"
+  - "dispute evaluation"
+  - "recovery analysis"
+  - "synthetic data"

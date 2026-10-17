@@ -39,4 +39,6 @@ The first command generates **fictional CSV accounts and events** from a fixed s
 
 **Concept and professional framing:** Siyu Zhang. **Implementation:** AI-assisted demonstration code, subject to substantive expert review and iterative validation. Do not infer independent software authorship or an audited real-world financial effect solely from this publication.
 
-**License:** Not yet selected. Public visibility does not itself grant a general software reuse license.
+**License:** [MIT License](LICENSE). Reuse of the software and associated documentation is permitted under its terms; all example data and metrics are fictional.
+
+**Citation:** See [CITATION.cff](CITATION.cff) for the author, title, version and citation metadata for this public D04 software resource.
