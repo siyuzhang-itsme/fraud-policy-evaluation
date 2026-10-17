@@ -1,0 +1,71 @@
+{
+  "schema": "d04-v11-method-comparison-1",
+  "synthetic_only": true,
+  "method_order": [
+    "claims_point",
+    "gross_point",
+    "strong_conventional",
+    "integrated"
+  ],
+  "method_descriptions": {
+    "claims_point": "Submitted-claims point estimate, no maturity/access/cost guardrail.",
+    "gross_point": "Gross-loss point estimate, no maturity/access/cost guardrail.",
+    "strong_conventional": "Access/cost-aware bounded comparison assuming present outcomes complete.",
+    "integrated": "Maturity-aware, label-uncertainty-aware comparison with access/cost safeguards."
+  },
+  "scenarios": [
+    {
+      "id": "narrow_sufficient",
+      "label": "Narrower rule sufficient",
+      "checkpoints": [
+        {
+          "day": 14,
+          "decisions": {
+            "claims_point": "retire",
+            "gross_point": "retire",
+            "strong_conventional": "retire",
+            "integrated": "defer"
+          }
+        },
+        {
+          "day": 90,
+          "decisions": {
+            "claims_point": "retire",
+            "gross_point": "retire",
+            "strong_conventional": "narrow",
+            "integrated": "narrow"
+          }
+        }
+      ]
+    },
+    {
+      "id": "uncertain_labels",
+      "label": "Labels remain uncertain",
+      "checkpoints": [
+        {
+          "day": 14,
+          "decisions": {
+            "claims_point": "retire",
+            "gross_point": "retire",
+            "strong_conventional": "retire",
+            "integrated": "defer"
+          }
+        },
+        {
+          "day": 90,
+          "decisions": {
+            "claims_point": "retire",
+            "gross_point": "retire",
+            "strong_conventional": "retire",
+            "integrated": "defer"
+          }
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "The two point baselines ignore access/cost and prioritize retire.",
+    "Strong conventional is a stronger comparator but assumes presently observed loss is complete.",
+    "These fictional settings do not demonstrate superior results in every real setting."
+  ]
+}
