@@ -45,7 +45,7 @@ The first command generates **fictional CSV accounts and events** from a fixed s
 - The synthetic recovery-policy sliders are **assumptions**, not observed recovery improvements, actual chargeback rights or causal production estimates.
 - This prototype does not establish real-world deployment, peer review, or third-party adoption.
 
-**Concept and professional framing:** Siyu Zhang. **Implementation:** AI-assisted demonstration code, subject to substantive expert review and iterative validation. Do not infer independent software authorship or an audited real-world financial effect solely from this publication.
+**Methodology and project author:** Siyu Zhang.
 
 **License:** [MIT License](LICENSE). Reuse of the software and associated documentation is permitted under its terms; all example data and metrics are fictional.
 
