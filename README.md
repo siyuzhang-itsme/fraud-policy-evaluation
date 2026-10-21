@@ -6,13 +6,15 @@
 
 **Stop Fraud. Protect Legitimate Payments. Recover Losses.**
 
-A reproducible **fictional** demonstration of two connected consumer-financial risk decisions: (1) payment screening and rule governance, and (2) dispute handling and recovery policy. The example shows how later evidence can improve decisions without using real account, customer, employer, or production-rule data.
+**A payment is blocked. Did that stop fraud—or wrongly turn away a legitimate customer?**
+
+At the moment of intervention, the answer may not yet be clear. Weeks or months later, disputes, investigations, and recovery outcomes can provide more reliable evidence about the original decision. But if that later evidence never feeds back into policy evaluation, a risk system can continue making decisions without systematically learning from its mistakes.
 
 ## The PIVOT methodology
 
-**PIVOT (Proportionate Intervention Validation & Outcome Tracking)** is Siyu Zhang's evidence-to-decision methodology. It connects the reliability of fraud evidence, the evaluation of intervention effects, the costs of incorrectly restricting legitimate payments, and renewed decisions as dispute and recovery outcomes mature.
+**PIVOT (Proportionate Intervention Validation & Outcome Tracking)** is Siyu Zhang's evidence-to-decision framework. It connects the reliability of fraud evidence, the effects of interventions, the costs imposed on legitimate customers, and maturing outcomes to ongoing decisions about whether policies should be retained, refined, retired, or deferred.
 
-**D04 illustrates selected parts of this approach with fictional data.** It is a reproducible demonstration, not a documented production deployment or proof of real-world financial impact. The published v1.0.0 release and its DOI retain the original title, *Fraud Policy Evaluation: Payment Decisions, Disputes & Recovery*; PIVOT is the current name of the broader methodology.
+**This repository demonstrates selected PIVOT components with entirely fictional data**, covering payment screening and rule governance alongside dispute and recovery decisions. It contains no real account, customer, employer, or production-rule data, and does not claim that the demo itself is a documented production deployment or evidence of real-world financial impact. The archived v1.0.0 release remains identified by its original DOI; this README presents the current PIVOT framing.
 
 **[Open the interactive English dashboard](docs/index.html)** — download the HTML file and open it locally in a browser. The page requires no backend or account.
 
