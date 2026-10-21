@@ -1,4 +1,6 @@
-# Fraud Policy Evaluation — Payment Decisions, Disputes & Recovery
+# PIVOT Framework — Fraud Decision Evaluation & Feedback Loops
+
+*Payment Decisions, Disputes & Recovery*
 
 [![Zenodo DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23442713.svg)](https://doi.org/10.5281/zenodo.23442713)
 
@@ -6,9 +8,9 @@
 
 A reproducible **fictional** demonstration of two connected consumer-financial risk decisions: (1) payment screening and rule governance, and (2) dispute handling and recovery policy. The example shows how later evidence can improve decisions without using real account, customer, employer, or production-rule data.
 
-## Related methodology: PIVOT Framework
+## The PIVOT methodology
 
-Siyu Zhang now refers to her broader evidence-to-decision methodology as the **PIVOT Framework (Proportionate Intervention Validation & Outcome Tracking)**. It connects the reliability of fraud evidence, the evaluation of intervention effects, the costs of incorrectly restricting legitimate payments, and renewed decisions as dispute and recovery outcomes mature.
+**PIVOT (Proportionate Intervention Validation & Outcome Tracking)** is Siyu Zhang's evidence-to-decision methodology. It connects the reliability of fraud evidence, the evaluation of intervention effects, the costs of incorrectly restricting legitimate payments, and renewed decisions as dispute and recovery outcomes mature.
 
 **D04 illustrates selected parts of this approach with fictional data.** It is a reproducible demonstration, not a documented production deployment or proof of real-world financial impact. The published v1.0.0 release and its DOI retain the original title, *Fraud Policy Evaluation: Payment Decisions, Disputes & Recovery*; PIVOT is the current name of the broader methodology.
 
